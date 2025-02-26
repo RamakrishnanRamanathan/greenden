@@ -13,7 +13,7 @@
         <div class="flex justify-between p-3 bg-green-100  shadow-lg sticky top-0 z-10">
          <h1 class=" uppercase text-2xl">Greenden</h1>
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-       class="w-12 pr-5 md:hidden">
+       class="w-12 pr-5 md:hidden" id="icon">
        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
      </svg>
      <ul class=" space-x-5 pr-5 text-lg hidden md:flex">
@@ -27,8 +27,23 @@
           <a href="./contact.html" class="text-gray-600 hover:underline">Contact</a>
         </li>
       </ul>
+
         </div>
      </section>
+     <section class="md:hidden" id="sideNav">
+      <p class="text-right bg-green-100 fixed z-40 top-0 right-1 cursor-pointer hidden " id="px">X</p>
+        <ul class=" pt-5 space-y-5 pl-5 text-lg flex-col items-center bg-green-100 fixed z-20 top-0 flex" style="width:50% ;height:100vh; right:0;display:none; " id="sideNavul">
+          <li>
+            <a href="./index.html" class="text-gray-600 hover:underline">Home</a>
+          </li>
+          <li>
+            <a href="./product.html" class="text-gray-600 hover:underline">Product</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="text-gray-600 hover:underline">Contact</a>
+          </li>
+        </ul>
+      </section>
      <!--Contact form-->
      <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -58,4 +73,5 @@
      <span>&copy;2021 Greenden.com</span>
    </section>
 </body>
+<script src="./index.js"></script>
 </html>

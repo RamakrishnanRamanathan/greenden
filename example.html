@@ -1,0 +1,31 @@
+<input type="text" placeholder="search" id="inputSearch">
+<div>
+    <h1>one</h1>
+    <h1>two</h1>
+    <h1>three</h1>
+    <h1>four</h1>
+    <h1>five</h1>
+    <h1>Six</h1>
+    <h1>Seven</h1>
+    <h1>eight</h1>
+    <h1>nine</h1>
+    <h1>ten</h1>
+</div>
+<script>
+    let enterValue = document.getElementById('inputSearch');
+    let productList = document.querySelectorAll('h1');
+    enterValue.addEventListener("keyup", () => {
+        for (let c = 0; c < productList.length; c++) {
+           if(productList[c].textContent.includes(enterValue.value)){
+           productList[c].style.display="block";
+            
+           }else{
+            productList[c].style.display="none";
+           }
+             
+            }
+
+        })
+   
+
+</script>
